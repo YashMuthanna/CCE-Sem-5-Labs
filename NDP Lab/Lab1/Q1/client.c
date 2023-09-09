@@ -59,7 +59,7 @@ int main() {
                 int t;
                 scanf("%d", &t);
                 buff[2] = t;
-                res = send(s, buff, sizeof(arr), 0);
+                res = send(s, buff, sizeof(buff), 0);
                 if(res == -1){
                     close(s);
                     exit(0);
@@ -69,7 +69,7 @@ int main() {
             case 2:
                 buff[0] = choice;
                 buff[1] = n;  
-                res = send(s, buff, sizeof(arr), 0);
+                res = send(s, buff, sizeof(buff), 0);
                 if(res == -1){
                     close(s);
                     exit(0);
@@ -78,7 +78,7 @@ int main() {
             case 3:
                 buff[0] = choice;
                 buff[1] = n;
-                res = send(s, buff, sizeof(arr), 0);
+                res = send(s, buff, sizeof(buff), 0);
                 if(res == -1){
                     close(s);
                     exit(0);
@@ -87,7 +87,7 @@ int main() {
             case 4:
                 buff[0] = choice;
                 buff[1] = n;
-                res = send(s, buff, sizeof(arr), 0);
+                res = send(s, buff, sizeof(buff), 0);
                 if(res == -1){
                     close(s);
                     exit(0);
@@ -96,7 +96,7 @@ int main() {
             case 5:
                 buff[0] = choice;
                 buff[1] = n;
-                res = send(s, buff, sizeof(arr), 0);
+                res = send(s, buff, sizeof(buff), 0);
                 if(res == -1){
                     close(s);
                     exit(0);
